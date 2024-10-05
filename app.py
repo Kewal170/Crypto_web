@@ -154,6 +154,10 @@ def home():
 def aboutus():
     return render_template("aboutus.html")
 
+@app.route("/mutualfundscalc", methods=["GET"])
+def mutualfundscalc():
+    return render_template("mutual_fund_calc.html")
+
 @app.route("/history")
 @login_required
 def history():
